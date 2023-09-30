@@ -18,12 +18,23 @@ function Logo(){
    );
 }
 
+function ItemMenu({nome}){
+  return(
+    <p className={styles.ItemMenu}>{nome}</p>
+  );
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
         <header>
           <Logo/>
+          <ItemMenu nome="Home"/>
+          <ItemMenu nome="About"/>
+          <ItemMenu nome="Contact"/>
+          <ItemMenu nome="Blog"/>
+          <ItemMenu nome="Videos"/>
           <main>
           {children}
           </main>
