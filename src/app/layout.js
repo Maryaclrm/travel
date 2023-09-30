@@ -11,12 +11,21 @@ export const metadata = {
   display: 'swap'
 })*/
 
-function Logo(){
+function Logo({x, y}){
    return(
-    <p className={styles.logo}>Ready<span className={styles.comercial}>&</span>Go</p>
+    <p style={{left: x, top: y}}className={styles.logo}>Ready<span className={styles.comercial}>&</span>Go</p>
 
    );
 }
+function Menu({children, x, y}){
+  return(
+<ul style= {{left: x, top:y}} className={styles.menu}>
+  {children.map((ItemMenu) =>(
+    <li key={ItemMenu.nome}>{ItemMenu}</li>
+  ))}
+  </ul>
+  );
+} 
 
 function ItemMenu({nome}){
   return(
@@ -29,12 +38,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <Logo/>
-          <ItemMenu nome="Home"/>
+          <Logo x={135} y={53} ativo={{nome: 'fulano', idade:'25', aluno:''}}/>  
+          <Menu x={435} y={60}>
+            <ItemMenu nome="Home"/>
           <ItemMenu nome="About"/>
           <ItemMenu nome="Contact"/>
           <ItemMenu nome="Blog"/>
           <ItemMenu nome="Videos"/>
+          </Menu>
           <main>
           {children}
           </main>
