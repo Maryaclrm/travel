@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
           <ItemMenu nome="Contact"/>
           <ItemMenu nome="Blog"/>
           <ItemMenu nome="Videos"/>
+          <ItemMenu nome="+38(097)8849989"/>
           </Menu>
           <main>
           {children}

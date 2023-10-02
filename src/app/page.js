@@ -2,5 +2,5 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <h1>TESTEANDO</h1>
+    <h1>teste</h1>
   )}
