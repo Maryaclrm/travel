@@ -27,3 +27,37 @@ margin-bottom: 0;
   padding-left: 0;
   width: 570px;
 }
+
+.texto{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 78.65px;
+font-style: normal;
+font-weight: 600;
+line-height: 133%; /* 104.605px */
+letter-spacing: 1.966px;
+}
+.textoMaior{
+    position: absolute;
+  font-size: 78.65px;
+  font-weight: 600;
+  font-family: Montserrat;
+  color: #FFF;
+  font-style: normal;
+  line-height: 133%; /* 104.605px */
+letter-spacing: 1.966px;
+width: 50%;
+}
+.textoMenor{
+    position: absolute;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20.285px;
+    font-style: normal;
+    font-weight: 543.047px;
+    line-height: 170%; /* 34.485px */
+    letter-spacing: 0.304px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
