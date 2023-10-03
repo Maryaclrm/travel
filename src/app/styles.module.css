@@ -11,6 +11,7 @@ margin-bottom: 0;
 }
 
 .itemMenu{
+    display: flex;
     font-size: 24.527px;
     font-weight: 500;
     font-family: Montserrat;
@@ -37,19 +38,32 @@ font-weight: 600;
 line-height: 133%; /* 104.605px */
 letter-spacing: 1.966px;
 }
-.textoMaior{
+
+.caixaTitulo{
     position: absolute;
-  font-size: 78.65px;
-  font-weight: 600;
-  font-family: Montserrat;
-  color: #FFF;
-  font-style: normal;
-  line-height: 133%; /* 104.605px */
-letter-spacing: 1.966px;
-width: 50%;
+    width: 50%;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.textoMaior{
+    
+    font-size: 78.65px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #FFF;
+    font-style: normal;
+    line-height: 133%; /* 104.605px */
+    letter-spacing: 1.966px;
+    margin: 0;
+    
+    border: 1px solid white;
 }
 .textoMenor{
-    position: absolute;
+    
     color: #FFF;
     font-family: Montserrat;
     font-size: 20.285px;
@@ -57,7 +71,6 @@ width: 50%;
     font-weight: 543.047px;
     line-height: 170%; /* 34.485px */
     letter-spacing: 0.304px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin: 0;
+    border: 1px solid white;
 }

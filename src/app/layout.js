@@ -35,17 +35,25 @@ function ItemMenu({nome}){
   );
 }
 
-function Maior({textin, x, y}){
+function ItemMenuIcone({nome}){
   return(
-    <p style= {{left: x, top:y}} className={styles.textoMaior}>{textin}</p>
+    <div className={styles.itemMenu}>
+      <img src="/phone.png"></img> 
+      <span>{nome}</span>
+    </div>
   );
 }
 
-function Menor({textan, x, y}){
+function CaixaTitulo({textin, textan, x, y}){
   return(
-    <p style= {{left:x, top: y}} className={styles.textoMenor}>{textan}</p>
+    <div style= {{left: x, top:y}} className={styles.caixaTitulo}>
+      <p className={styles.textoMaior}>{textin}</p>
+
+      <p className={styles.textoMenor}>{textan}</p>
+    </div>
   );
 }
+
 
 export default function RootLayout({ children }) {
   return (
@@ -59,12 +67,12 @@ export default function RootLayout({ children }) {
             <ItemMenu nome="Contact"/>
             <ItemMenu nome="Blog"/>
             <ItemMenu nome="Videos"/>
-            <ItemMenu nome="+38(097)8849989"/>
+            <ItemMenuIcone nome="+38(097)8849989"/>
           </Menu>
         </header>
           <main>
-          <Maior  x={135} y={238} textin="Your perfect honeymoon"/>
-          <Menor x={136} y={465.04} textan="Mayami is more than a honeymoon destination –
+          <CaixaTitulo x={135} y={238} textin="Your perfect honeymoon"
+          textan="Mayami is more than a honeymoon destination –
           it’s a perfect romantic spot for couples
            who like  spending time in beach. "/>
           {children}
