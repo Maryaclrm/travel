@@ -42,15 +42,13 @@ letter-spacing: 1.966px;
 .caixaTitulo{
     position: absolute;
     width: 50%;
-    border: 1px solid white;
-
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 .textoMaior{
-    
+
     font-size: 78.65px;
     font-weight: 600;
     font-family: Montserrat;
@@ -60,7 +58,6 @@ letter-spacing: 1.966px;
     letter-spacing: 1.966px;
     margin: 0;
     
-    border: 1px solid white;
 }
 .textoMenor{
     
@@ -72,5 +69,4 @@ letter-spacing: 1.966px;
     line-height: 170%; /* 34.485px */
     letter-spacing: 0.304px;
     margin: 0;
-    border: 1px solid white;
 }
