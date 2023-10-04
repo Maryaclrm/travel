@@ -14,7 +14,7 @@ margin-bottom: 0;
     display: flex;
     font-size: 24.527px;
     font-weight: 500;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -27,11 +27,12 @@ margin-bottom: 0;
   margin-bottom: 0;
   padding-left: 0;
   width: 570px;
+  height: 29.432px;
 }
 
 .texto{
     color: #FFF;
-font-family: Montserrat;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 78.65px;
 font-style: normal;
 font-weight: 600;
@@ -45,13 +46,13 @@ letter-spacing: 1.966px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
+} 
 
 .textoMaior{
 
     font-size: 78.65px;
     font-weight: 600;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #FFF;
     font-style: normal;
     line-height: 133%; /* 104.605px */
@@ -62,7 +63,7 @@ letter-spacing: 1.966px;
 .textoMenor{
     
     color: #FFF;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20.285px;
     font-style: normal;
     font-weight: 543.047px;
@@ -70,3 +71,26 @@ letter-spacing: 1.966px;
     letter-spacing: 0.304px;
     margin: 0;
 }
+
+.celular{
+    display: flex;
+    width: 202px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 14px;
+    position: absolute;
+}
+
+.numero{
+    color: #FFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19.205px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    width: 169px;
+    height: 23.045px;
+    margin: 0;
+}
+
