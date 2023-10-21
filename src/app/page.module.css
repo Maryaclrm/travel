@@ -14,7 +14,7 @@
 .card{
     background-color: #FAFAFA;
     height: 169px;
-    width: 269px;
+    width: 239px;
     filter: blur(0.6000000238418579px);
     border-radius: 7px;
 }
@@ -23,4 +23,11 @@
     color: #122330;
     font-size: 16.071px;
     margin: 0px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-start;
+    gap: 26px;
+    position: absolute;
 }

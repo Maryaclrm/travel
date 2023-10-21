@@ -4,6 +4,7 @@ import hawaii from '../../public/hawaii.png'
 import seta from '../../public/arrow-right.svg'
 import cyprus from '../../public/cyprus.png'
 import Bali from '../../public/bali.png'
+import { Children } from 'react'
 
 function Botao({x,y}){
  return (
@@ -21,13 +22,23 @@ function Card({localidade, imagem}){
   )
 }
 
+function Cards({children, x, y}){
+  return(
+    <div style={{left: x, top:y}} className={styles.cards}>
+      {children}
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <>
     <Botao x={135} y={601.72}/>
-    <Card localidade="Hawaii" imagem={hawaii}/>
-    <Card localidade="Cyprus" imagem={cyprus}/>
-    <Card localidade="Bali" imagem={Bali}/>
+    <Cards x={135} y={801}>
+      <Card localidade="Hawaii" imagem={hawaii}/>
+      <Card localidade="Cyprus" imagem={cyprus}/>
+      <Card localidade="Bali" imagem={Bali}/>
+    </Cards>
     </>
   )
 }
