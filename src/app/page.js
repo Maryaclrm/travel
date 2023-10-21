@@ -15,9 +15,12 @@ function Botao({x,y}){
 function Card({localidade, imagem}){
   return(
     <div className={styles.card}>
+      <div className={styles.cabecalhoCard}>
       <p className={styles.localidade}>{localidade}</p>
-      <Image src={seta} width={15.429} height={15.429}/>
-      <Image src= {imagem}/>
+
+      <Image src={seta}/>
+      </div>
+      <Image src= {imagem} className={styles.imagem}/>
     </div>
   )
 }
@@ -27,6 +30,12 @@ function Cards({children, x, y}){
     <div style={{left: x, top:y}} className={styles.cards}>
       {children}
     </div>
+  )
+}
+
+function Social({children, x, y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.social}>{children}</div>
   )
 }
 

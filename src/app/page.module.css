@@ -17,6 +17,7 @@
     width: 239px;
     filter: blur(0.6000000238418579px);
     border-radius: 7px;
+    position: relative;
 }
 
 .localidade{
@@ -30,4 +31,25 @@
     justify-content: space-start;
     gap: 26px;
     position: absolute;
+    border-radius: 2px;
+}
+
+.cabecalhoCard{
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    position: absolute;
+    left: 24px;
+    top: 20px;
+}
+
+.imagem {
+    border-radius: 2px;
+    left: 20px;
+    position: absolute;
+    top: 52px;
+}
+
+.social{
+    display: flex;
 }
