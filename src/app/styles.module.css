@@ -88,9 +88,16 @@ letter-spacing: 1.966px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
     width: 169px;
     height: 23.045px;
     margin: 0;
+}
+
+.redesSociais{
+    align-items: center;
+    display: flex;
+    gap: 38px;
+    position: absolute;
+
 }
 

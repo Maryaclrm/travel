@@ -2,6 +2,9 @@ import './globals.css'
 import styles from './styles.module.css'
 //import {Quicksand} from 'next/font/google'
 import Image from 'next/image';
+import facebook from '../../public/facebook.svg';
+import twitter from '../../public/twitter.svg';
+import link from '../../public/link.png';
 
 export const metadata = {
   title: 'Travel Landing Page',
@@ -28,6 +31,15 @@ function Menu({children, x, y}){
   );
 } 
 
+function RedesSociais({x, y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.redesSociais}>
+      <Image src={facebook}/>
+      <Image src={twitter}/>
+      <Image src={link}/> 
+    </div>
+  )
+}
 
 function ItemMenu({nome}){
   return(
@@ -78,6 +90,9 @@ export default function RootLayout({ children }) {
           textan={"Mayami is more than a honeymoon destination – it’s a perfect romantic spot for couples who like  spending time in beach. "}/>
           {children}
           </main>
+          <footer>
+            <RedesSociais x={1175} y={843}/>
+          </footer>
         </body>
         
     </html>
