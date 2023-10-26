@@ -5,6 +5,10 @@ import Image from 'next/image';
 import facebook from '../../public/facebook.svg';
 import twitter from '../../public/twitter.svg';
 import link from '../../public/link.png';
+import palmeira from '../../public/Palms.png';
+import nuvem1 from '../../public/nuvem1.svg';
+import nuvem2 from '../../public/nuvem2.png';
+import circulo from '../../public/Ellipse 1.svg';
 
 export const metadata = {
   title: 'Travel Landing Page',
@@ -37,6 +41,38 @@ function RedesSociais({x, y}){
       <Image src={facebook}/>
       <Image src={twitter}/>
       <Image src={link}/> 
+    </div>
+  )
+}
+
+function Palmeira({x, y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.palmeira}>
+      <Image src={palmeira}/>
+      </div>
+  )
+}
+
+function Nuvem1({x,y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.nuvens}>
+      <Image src={nuvem1}/>
+    </div>
+  )
+}
+
+function Nuvem2({x,y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.nuvens}>
+      <Image src={nuvem2}/>
+    </div>
+  )
+}
+
+function Circulo({x,y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.circulo}>
+      <Image src={circulo}/>
     </div>
   )
 }
@@ -91,7 +127,11 @@ export default function RootLayout({ children }) {
           {children}
           </main>
           <footer>
-            <RedesSociais x={1175} y={843}/>
+          <RedesSociais x={1175} y={843}/>
+            <Circulo x={1175} y={155}/>
+            <Nuvem1 x={568} y={600}/>
+            <Nuvem2 x={638} y={155}/>
+            <Palmeira x={638} y={155}/>
           </footer>
         </body>
         

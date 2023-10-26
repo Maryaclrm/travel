@@ -101,3 +101,28 @@ letter-spacing: 1.966px;
 
 }
 
+.palmeira{
+    width: 765px;
+    height: 765px;
+    flex-shrink: 0;
+    position: absolute;
+    margin: 0;
+}
+
+.nuvem{
+    width: 468px;
+    height: 195px;
+    flex-shrink: 0;
+    opacity: 0.4;
+    background: lightgray 50% / cover no-repeat;
+    margin: 0;
+}
+
+.circulo{
+    border-radius: 646px;
+    opacity: 0.8;
+    background: #FFF;
+    filter: blur(125px);
+    margin: 0;
+    position: center;
+}
